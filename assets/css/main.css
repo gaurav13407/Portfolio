@@ -2306,6 +2306,88 @@ section,
   text-decoration: underline;
 }
 
+/* Resume / Education visual balance */
+.resume .row.gy-5 {
+  align-items: stretch; /* Make columns equal height */
+}
+
+.resume .row.gy-5 > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+}
+
+.resume .experience-section,
+.resume .education-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.resume .experience-section .experience-cards {
+  flex: 1 1 auto;
+}
+
+.education-section .education-timeline {
+  flex: 1 1 auto;
+}
+
+.education-section .timeline-track {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.education-section .timeline-item .timeline-content {
+  background: var(--surface-color);
+  padding: 22px;
+  border-radius: 10px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.education-section .timeline-item .timeline-content:hover {
+  transform: translateY(-5px);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 80%);
+  box-shadow: 0 15px 45px color-mix(in srgb, var(--default-color), transparent 85%);
+}
+
+.education-section .timeline-item .timeline-content {
+  transition: all 0.3s ease;
+}
+
+.education-section .timeline-item .timeline-content h4 {
+  margin-top: 0;
+  color: var(--heading-color);
+}
+
+.education-section .timeline-item .timeline-content .education-meta {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.experience-section .experience-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Make resume buttons match header style */
+.resume .section-header .download-cv {
+  display: inline-block;
+  margin-top: 10px;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.resume .section-header .download-cv:hover{
+  opacity: 0.95;
+}
+
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
