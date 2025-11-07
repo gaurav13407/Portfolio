@@ -2290,6 +2290,22 @@ section,
   }
 }
 
+/* Ensure contact info icons and text are left-aligned inside info boxes */
+.contact .info-item {
+  justify-content: flex-start !important;
+  text-align: left;
+}
+.contact .info-item .info-content {
+  text-align: left;
+}
+.contact .info-item a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.contact .info-item a:hover {
+  text-decoration: underline;
+}
+
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
